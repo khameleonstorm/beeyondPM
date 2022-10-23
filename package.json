@@ -1,0 +1,56 @@
+{
+  "name": "router-tut",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/icons-material": "^5.10.6",
+    "@mui/material": "^5.10.3",
+    "@react-icons/all-files": "^4.1.0",
+    "@reduxjs/toolkit": "^1.8.6",
+    "@splinetool/react-spline": "^2.2.3",
+    "@splinetool/runtime": "^0.9.123",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "emoji-picker-react": "^3.6.5",
+    "firebase": "^9.9.4",
+    "physics": "^1.0.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-firebase-hooks": "^5.0.3",
+    "react-icons": "^4.4.0",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "^5.0.1",
+    "react-select": "^5.4.0",
+    "react-spinners": "^0.13.4",
+    "spline": "^0.0.0",
+    "tslib": "^2.4.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

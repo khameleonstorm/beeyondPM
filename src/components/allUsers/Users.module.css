@@ -1,0 +1,95 @@
+.container{
+  width: 100%;
+  height: 100Vh;
+  background: #0C1C1F;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 20px 0px;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.container .users{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.container .users p{
+  font-size: 0.7rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container .users p:hover{
+  color: #cefff0;
+}
+
+.container .users div{
+  position: relative;
+}
+
+.container .users img{
+  width: 30px;
+  height: 30px;
+  background: #00000018;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.container .users svg{
+  position: absolute;
+  top: 2px;
+  left: 6px;
+}
+
+.spin{
+  position: absolute;
+  top: 40px;
+  right: 60px;
+}
+
+@media screen and (max-width: 650px){
+  .container{
+    color: black;
+    background: transparent;
+    align-items: flex-start;
+    padding: 0 !important;
+  }
+
+  .container .users{
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding: 20px 5px 0px 5px;
+  }
+
+  .container .users p{
+    font-size: 1rem;
+    font-weight: 500;
+    padding-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .container .users p:hover{
+    color: #00110c;
+  }
+
+  .container .users img{
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.3));
+  }
+
+  .container .users svg{
+    top: 5px;
+    left: 10px;
+    opacity: 80%;
+    z-index: 2;
+  }
+
+}

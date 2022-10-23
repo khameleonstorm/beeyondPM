@@ -1,0 +1,154 @@
+.container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px 0;
+  gap: 10px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.spinner{
+  position: absolute !important;
+  bottom: 55%;
+  right: 400px;
+}
+
+.card{
+  width: 21.5vw;
+  height: 180px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  padding: 15px 10px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.avatar{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: drop-shadow(0 0 2px rgba(221, 0, 255, 0.05));
+  background: rgba(0, 255, 204, 0.05);
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.title{
+  font-size: 1rem;
+  color: #000000d9;
+}
+
+.title:hover{
+  color: #0C1C1F;
+  cursor: pointer;
+}
+
+.dueDate{
+  font-size: .7rem;
+  font-weight: 200;
+  color: rgba(0, 0, 0, 0.582);
+  padding: 10px 0;
+}
+
+.desc{
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+}
+
+.team{
+  width: 100%;
+  display: flex;
+  margin: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.team img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+  filter: drop-shadow(0 0 2px #00000037);
+}
+
+
+.team img:nth-child(2){
+  left: 15px;
+  z-index: 1;
+}
+
+.team img:nth-child(3){
+  left: 30px;
+  z-index: 2;
+}
+
+.team img:nth-child(4){
+  left: 45px;
+  z-index: 3;
+}
+
+.like2{
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  cursor: pointer;
+}
+
+.like{
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.comment{
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1068px){
+.card{
+  width: 27vw;
+}
+}
+
+
+@media screen and (max-width: 900px){
+.container{
+  justify-content: center;
+  padding-left: 0;
+}
+
+.card{
+  width: 40vw;
+}
+
+}
+
+@media screen and (max-width: 650px){
+.container{
+  padding: 20px 10px;
+}
+
+.card{
+  width: 100%;
+  cursor: default;
+}
+}

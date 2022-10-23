@@ -1,0 +1,204 @@
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sideNav{
+  width: 15%;
+  height: 100vh;
+  min-width: 170px;
+}
+
+.main{
+  width: 70%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.mainWrapper{
+  padding: 30px 150px;
+  position: relative;
+}
+
+.users{
+  width: 15%;
+  min-width: 170px;
+}
+
+.spin{
+  position: absolute;
+  top: 50px;
+  left: 250px;
+}
+
+.title{
+  font-size: 2rem;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  color: black;
+  position: relative;
+}
+
+.desc{
+  font-size: .8rem;
+  padding-bottom: 20px;
+  color: black;
+}
+
+.stats{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.team{
+  position: relative;
+  margin-top: 30px;
+}
+
+.team img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+  filter: drop-shadow(0 0 2px #00000037);
+  background: black;
+}
+
+.team img:nth-child(2){
+  left: 15px;
+  z-index: 1;
+}
+
+.team img:nth-child(3){
+  left: 30px;
+  z-index: 2;
+}
+
+.team img:nth-child(4){
+  left: 45px;
+  z-index: 3;
+}
+
+.likes{
+  position: relative;
+}
+
+.like{
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+
+.comments{
+  width: 100%;
+  min-height: 60px;
+  background: rgba(19, 46, 51, 0.008);
+  box-shadow: 0px 0px 8px 0px rgba(35, 35, 35, 0.05);
+  overflow: hidden;
+  position: relative;
+  margin: 30px 0;
+}
+
+.comments p{
+  font-size: .8rem;
+  padding: 15px 60px 15px 15px;
+  color: black;
+}
+
+.commentImage{
+  width: 100%;
+  border-radius: 10px;
+  object-fit: contain;
+  margin-top: 30px;
+}
+
+.avatar{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: drop-shadow(0 0 2px rgba(221, 0, 255, 0.05));
+  background: rgba(0, 255, 204, 0.05);
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+
+@media screen and (max-width: 900px){
+.sideNav{
+  width: 25%;
+}
+
+.main{
+  width: 50%;
+}
+
+.mainWrapper{
+  padding: 30px 50px;
+}
+
+.users{
+  width: 25%;
+}
+}
+
+@media screen and (max-width: 650px){
+.container{
+  flex-direction: column;
+}
+
+.sideNav{
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+}
+
+.main{
+  width: 100%;
+}
+
+
+.mainWrapper{
+  padding: 30px 10px 80px 10px;
+}
+
+.users{
+  width: 100%;
+  display: none;
+}
+
+
+.title{
+  font-size: 6vw;
+  color: #0C1C1F;
+  padding-right: 50px;
+}
+
+.desc{
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.comments p{
+  font-size: 1rem;
+  padding: 15px 50px 15px 5px;
+  font-weight: 300;
+}
+
+.avatar{
+  right: 5px;
+  top: 5px;
+}
+
+
+}

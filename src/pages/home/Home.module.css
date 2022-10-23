@@ -1,0 +1,149 @@
+.Home{
+  padding: 0px 50px;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content{
+  width: 40%;
+}
+
+.content h1:nth-child(1){
+  font-size: 5.5rem;
+  font-family: "Righteous", cursive;
+  text-shadow: #424441 0px 0px 5px;
+  
+}
+
+.content h1:nth-child(1) span{
+color: #44AFAF;
+text-shadow: #44AFAF 0px 0px 10px;
+}
+
+.content h1:nth-child(2){
+  font-size: 5.5rem;
+  font-family: "Righteous", cursive;
+  text-shadow: #424441 0px 0px 5px;
+}
+
+.content h1:nth-child(2) span{
+  color: #4DB5E6;
+  text-shadow: #4DB5E6 0px 0px 10px;
+}
+
+.management{
+  width: fit-content;
+  display: inline-block;
+  font-size: 4.4rem;
+  position: relative;
+  font-family: "Righteous", cursive;
+  position: relative;
+  text-shadow: #424441 0px 0px 5px;
+}
+
+.management span:nth-child(1){
+  color: #424441;
+}
+
+.management span:nth-child(2){
+  display: inline-block;
+  color: #ED152C;
+  transform: rotate(160deg) skew(10deg);
+  position: absolute;
+  bottom: -45px;
+  right: -40px;
+  text-shadow: rgba(237, 21, 43, 0.6) 0px 0px 10px;
+}
+
+.start{
+  width: 180px;
+  padding: 13px;
+  background: rgba(68, 175, 175, 0.06);
+  border: 2px solid #4DB5E6;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  font-family: 'Righteous', cursive;
+  font-size: 1.1rem;
+  margin-top: 30px;
+}
+
+.start:hover{
+  transition: all ease-in-out 0.4s;
+  background: #4DB5E6;
+  color: white;
+  cursor: pointer;
+}
+
+.illustration{
+  width: 50%;
+  height: 100%;
+  padding-bottom: 40px;
+}
+
+.illustration img{
+  width: 90%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1050px){
+
+.content{
+  width: 100%;
+}
+
+.content h1:nth-child(1){
+  font-size: 6rem;
+}
+
+.content h1:nth-child(2){
+  font-size: 6rem;
+}
+
+.management{
+  font-size: 5.5rem;
+}
+
+.management span:nth-child(2){
+  bottom: -50px;
+  right: -50px;
+}
+
+.illustration{
+  display: none;
+}
+}
+
+@media screen and (max-width: 700px){
+.Home{
+  padding: 0px 20px;
+}
+  
+.content h1:nth-child(1){
+  font-size: 15vw;
+}
+
+.content h1:nth-child(2){
+  font-size: 15vw;
+}
+
+.management{
+  font-size: 13vw;
+}
+
+.management span:nth-child(2){
+  bottom: -8vw;
+  right: -7vw;
+}
+
+}
